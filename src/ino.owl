@@ -29,13 +29,13 @@
         <dc:date>2018-03-10</dc:date>
         <dc:creator>Arzucan Ozgur</dc:creator>
         <dc:contributor>Yu Lin (YL)</dc:contributor>
-        <dc:subject xml:lang="en">An ontology for the annotation of the interaction network domain.</dc:subject>
+        <dc:subject xml:lang="en">An ontology of interactions and interaction networks</dc:subject>
         <dc:title xml:lang="en">INO: Interaction Network Ontology</dc:title>
         <dc:creator xml:lang="en">Junguk Hur</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:description xml:lang="en">The Interaction Network Ontology (INO) is an ontology in the domain of interaction network. INO aims to standardize interaction network annotation, integrate various interaction network data, and support computer-assisted reasoning. It is aimed to represent general interactions (e.g., molecular interactions) and interaction networks (e.g., Bayesian network). INO was initiated by supporting literature mining related to interactions and interaction networks. INO aligns with BFO. INO is a community-based ontology. Its development follows the OBO Foundry principles.</dc:description>
-        <owl:versionInfo xml:lang="en">Vision Release; 1.0.109</owl:versionInfo>
+        <dc:description xml:lang="en">he Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations. INO is a community-driven ontology, aligns with BFO, and is developed by following the OBO Foundry principles.</dc:description>
+        <owl:versionInfo xml:lang="en">1.0.111</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
