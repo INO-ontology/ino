@@ -1,0 +1,25 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/CHEBI_import.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33696 #nucleic acid
+
+http://purl.obolibrary.org/obo/CHEBI_16991 #deoxyribonucleic acid, DNA
+http://purl.obolibrary.org/obo/CHEBI_33697 #ribonucleic acid 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_23367
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040
+
+http://purl.obolibrary.org/obo/CHEBI_33696 #nucleic acid
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity 
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

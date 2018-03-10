@@ -26,26 +26,29 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ino.owl">
-        <dc:date>2018-01-10</dc:date>
-        <dc:title xml:lang="en">INO: Interaction Network Ontology</dc:title>
-        <dc:contributor>Yu Lin (YL)</dc:contributor>
+        <dc:date>2018-03-10</dc:date>
         <dc:creator>Arzucan Ozgur</dc:creator>
+        <dc:contributor>Yu Lin (YL)</dc:contributor>
         <dc:subject xml:lang="en">An ontology for the annotation of the interaction network domain.</dc:subject>
+        <dc:title xml:lang="en">INO: Interaction Network Ontology</dc:title>
         <dc:creator xml:lang="en">Junguk Hur</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
         <dc:description xml:lang="en">The Interaction Network Ontology (INO) is an ontology in the domain of interaction network. INO aims to standardize interaction network annotation, integrate various interaction network data, and support computer-assisted reasoning. It is aimed to represent general interactions (e.g., molecular interactions) and interaction networks (e.g., Bayesian network). INO was initiated by supporting literature mining related to interactions and interaction networks. INO aligns with BFO. INO is a community-based ontology. Its development follows the OBO Foundry principles.</dc:description>
-        <owl:versionInfo xml:lang="en">Vision Release; 1.0.107</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release; 1.0.109</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="&obo;ino/BFO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ino/CHEBI_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/CL_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/IAO_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/IDO_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/MI_import.owl"/>
+        <owl:imports rdf:resource="&obo;ino/NCBITaxon_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/OGG_import.owl"/>
+        <owl:imports rdf:resource="&obo;ino/PR_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/PW_import.owl"/>
         <owl:imports rdf:resource="&obo;ino/RO_import.owl"/>
     </owl:Ontology>
@@ -600,22 +603,6 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000044"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;SO_0000356"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                                <owl:someValuesFrom rdf:resource="&obo;INO_0000010"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>a gene expression regulation process that involves the regulation of a gene transcription.</obo:IAO_0000115>
         <obo:INO_0000006>transcribed, transcribed by, regulates the transcription of, regulated the transcription of, regulates // transcription, regulated // transcription, under the control of // transcription, essential for // transcription,  trascription depends, transcription // dependent, control // transcription, controlling // transcription, requires // transcription</obo:INO_0000006>
         <obo:IAO_0000118>regulation of gene transcription</obo:IAO_0000118>
@@ -742,9 +729,10 @@
     <!-- http://purl.obolibrary.org/obo/INO_0000041 -->
 
     <owl:Class rdf:about="&obo;INO_0000041">
-        <rdfs:label xml:lang="en">physical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:label xml:lang="en">physical entity - obsolete</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;INO_0000159"/>
         <obo:IAO_0000116>place holder for physical entities</obo:IAO_0000116>
+        <rdfs:comment>Obsolete note: This class is replaced by CHEBI term: molecular entity</rdfs:comment>
     </owl:Class>
     
 
@@ -828,18 +816,6 @@
     <owl:Class rdf:about="&obo;INO_0000045">
         <rdfs:label xml:lang="en">protein translation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000102"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;SO_0000356"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
-                <owl:someValuesFrom rdf:resource="&obo;PR_000000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:INO_0000006>translation, translated, translating, encoding, encodes, protein production</obo:INO_0000006>
         <obo:IAO_0000118>gene translation</obo:IAO_0000118>
         <obo:IAO_0000115>a gene expression process that results in protein production from a gene DNA sequence. </obo:IAO_0000115>
@@ -1022,7 +998,7 @@
 
     <owl:Class rdf:about="&obo;INO_0000058">
         <rdfs:label>conversion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;MI_0407"/>
         <obo:INO_0000006>conversion, convert, converted, converting, converts, derived, derives, derivation</obo:INO_0000006>
         <obo:IAO_0000115>a direct physical association that one interactor is converted from another interactor. </obo:IAO_0000115>
         <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
@@ -1394,7 +1370,7 @@
 
     <owl:Class rdf:about="&obo;INO_0000090">
         <rdfs:label xml:lang="en">molecular complex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_23367"/>
     </owl:Class>
     
 
@@ -1540,7 +1516,7 @@
 
     <owl:Class rdf:about="&obo;INO_0000102">
         <rdfs:label>gene expression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;INO_0000002"/>
         <obo:INO_0000006>express, expressed, expresses, expressing, expression, expressions</obo:INO_0000006>
         <obo:IAO_0000115>a biological interaction that uses the information from a gene to synthesize a functional gene product. </obo:IAO_0000115>
         <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
@@ -1595,12 +1571,6 @@
         <rdfs:subClassOf rdf:resource="&obo;INO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;INO_0000154"/>
-                <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
             </owl:Restriction>
@@ -1609,6 +1579,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;IDO_0000528"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;INO_0000154"/>
+                <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An interaction that involves a host (host organism or host cell) and pathogen organism at a specific condition.</obo:IAO_0000115>
@@ -1683,12 +1659,6 @@
     <owl:Class rdf:about="&obo;INO_0000108">
         <rdfs:label xml:lang="en">induction by binding to protein</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000122"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;PR_000000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:INO_0000087>YH, AO, JH</obo:INO_0000087>
         <obo:IAO_0000112>The Salmonella invasin SipB induces macrophage apoptosis by binding to caspase-1</obo:IAO_0000112>
         <obo:INO_0000006>induction ... by binding to // induces .. through binding// induced ... by binding to // caused ... by binding to // causes ... through ... binding</obo:INO_0000006>
@@ -1773,74 +1743,7 @@
 
     <owl:Class rdf:about="&obo;INO_0000113">
         <rdfs:label xml:lang="en">macrophage-pathogen protein-protein interaction</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;INO_0000113"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;PR_000000001"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IDO_0000528"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;PR_000000001"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IDO_0000528"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000112>The Salmonella invasin SipB induces macrophage apoptosis by binding to caspase-1. From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC26795/</obo:IAO_0000112>
         <obo:IAO_0000115>A macrophage-pathogen interaction that involves a macrophage protein and a pathogen protein.</obo:IAO_0000115>
@@ -2102,7 +2005,7 @@
 
     <owl:Class rdf:about="&obo;INO_0000132">
         <rdfs:label xml:lang="en">small molecule</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_23367"/>
     </owl:Class>
     
 
@@ -2150,6 +2053,8 @@
     <owl:Class rdf:about="&obo;INO_0000135">
         <rdfs:label xml:lang="en">pathway step</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An data item that indicates the step number of a pathway.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2170,38 +2075,6 @@
     <owl:Class rdf:about="&obo;INO_0000138">
         <rdfs:label xml:lang="en">macrophage-pathogen PPI inducing cell death</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000113"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IDO_0000528"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002411"/>
@@ -2501,38 +2374,6 @@
     <owl:Class rdf:about="&obo;INO_0000156">
         <rdfs:label xml:lang="en">epithelial cell-pathogen protein-protein interaction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000152"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;PR_000000001"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IDO_0000528"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000117>YH</obo:IAO_0000117>
         <obo:IAO_0000112>We show that caspase-2 functions as an initiator caspase during Staphylococcus aureus α-toxin- and Aeromonas aerolysin-mediated apoptosis in epithelial cells. 
 From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
@@ -2575,8 +2416,17 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;INO_0000158">
         <rdfs:label xml:lang="en">interaction network model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Interactome</obo:IAO_0000119>
         <obo:IAO_0000115>An information content entity that models interaction network</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000159 -->
+
+    <owl:Class rdf:about="&obo;INO_0000159">
+        <rdfs:label xml:lang="en">obsolete class</rdfs:label>
     </owl:Class>
     
 
@@ -2639,12 +2489,6 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;SO_0000356"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Transcription_%28genetics%29</obo:IAO_0000119>
@@ -2778,11 +2622,21 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
+    <!-- http://purl.obolibrary.org/obo/LifO_0000005 -->
 
-    <owl:Class rdf:about="&obo;PR_000000001">
-        <rdfs:label xml:lang="en">protein</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000041"/>
+    <owl:Class rdf:about="&obo;LifO_0000005">
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An organism is an individual entity that exhibits the properties of life, including reproduction, growth and development, maintenance, and response to stimuli. All organisms are composed of one or more cells.</obo:IAO_0000115>
+        <dc:creator>Oliver He</dc:creator>
+        <rdfs:comment>An organism may be either a prokaryote or a eukaryote. Prokaryotes are represented by two separate domains—bacteria and archaea. Eukaryotic organisms are characterized by the presence of a membrane-bound cell nucleus and contain additional membrane-bound compartments called organelles. Viruses are not typically considered to be organisms because they are incapable of autonomous reproduction, growth or metabolism.</rdfs:comment>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2854,24 +2708,6 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
         <oboInOwl:created_by rdf:datatype="&xsd;string">VPetri</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">pathway</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="&obo;pw.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SO_0000352 -->
-
-    <owl:Class rdf:about="&obo;SO_0000352">
-        <rdfs:label xml:lang="en">DNA</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000041"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SO_0000356 -->
-
-    <owl:Class rdf:about="&obo;SO_0000356">
-        <rdfs:label xml:lang="en">RNA</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000041"/>
     </owl:Class>
 </rdf:RDF>
 

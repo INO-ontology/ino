@@ -1,0 +1,36 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/NCBITaxon_import.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens
+#http://purl.obolibrary.org/obo/NCBITaxon_10090 #mouse 
+#http://purl.obolibrary.org/obo/NCBITaxon_40674 #mammal
+http://purl.obolibrary.org/obo/NCBITaxon_562 #E. coli 
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #M. tuberculosis
+http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota
+http://purl.obolibrary.org/obo/NCBITaxon_2 #Bacteria
+http://purl.obolibrary.org/obo/NCBITaxon_2157 #Archaea
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
+
+http://purl.obolibrary.org/obo/NCBITaxon_2 #Bacteria
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
+
+http://purl.obolibrary.org/obo/NCBITaxon_2157 #Archaea
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+# http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+# mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+
+[Source annotation URIs to be excluded]
