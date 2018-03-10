@@ -1,0 +1,63 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/GO_import.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/GO_0008219 #cell death
+http://purl.obolibrary.org/obo/GO_0006915 #apoptotic process
+http://purl.obolibrary.org/obo/GO_0012501 #programmed cell death
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+
+http://purl.obolibrary.org/obo/GO_0006461 #protein complex assembly
+http://purl.obolibrary.org/obo/GO_0051259 #protein oligomerization
+http://purl.obolibrary.org/obo/GO_0006473 #protein acetylation
+http://purl.obolibrary.org/obo/GO_0016310 #phosphorylation
+
+http://purl.obolibrary.org/obo/GO_0018377  #protein myristoylation
+#includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/GO_0006915 #apoptotic process
+subClassOf http://purl.obolibrary.org/obo/GO_0012501 #programmed cell death
+
+http://purl.obolibrary.org/obo/GO_0012501 #programmed cell death
+subClassOf http://purl.obolibrary.org/obo/GO_0008219 #cell death
+
+http://purl.obolibrary.org/obo/GO_0008219 #cell death
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological process
+
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
+
+http://purl.obolibrary.org/obo/GO_0006473
+subClassOf http://purl.obolibrary.org/obo/INO_0000022  #acetylation
+
+http://purl.obolibrary.org/obo/GO_0016310 #phosphorylation
+subClassOf http://purl.obolibrary.org/obo/INO_0000007  #chemical addition
+
+http://purl.obolibrary.org/obo/GO_0018377  #protein myristoylation
+subClassOf http://purl.obolibrary.org/obo/INO_0000207  #lipid addition
+
+http://purl.obolibrary.org/obo/GO_0006461 #protein complex assembly
+subClassOf http://purl.obolibrary.org/obo/MI_0407 #direct interaction
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+http://www.geneontology.org/formats/oboInOwl#id
+http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+
+
+
+
+
+

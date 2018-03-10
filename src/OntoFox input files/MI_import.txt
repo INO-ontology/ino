@@ -1,0 +1,34 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/MI_import.owl
+
+[Source ontology]
+MI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/MI_0914 #association
+includeAllChildren
+
+http://purl.obolibrary.org/obo/MI_0208 #genetic interaction
+includeAllChildren
+
+http://purl.obolibrary.org/obo/MI_0403 #colocalization
+http://purl.obolibrary.org/obo/MI_1110 #predicted interaction
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/MI_0914 #association
+subClassOf http://purl.obolibrary.org/obo/INO_0000002  #interaction
+
+http://purl.obolibrary.org/obo/MI_0208 #genetic interaction
+subClassOf http://purl.obolibrary.org/obo/INO_0000002  #interaction
+
+http://purl.obolibrary.org/obo/MI_0403 #colocalization
+subClassOf http://purl.obolibrary.org/obo/INO_0000002  #interaction
+
+http://purl.obolibrary.org/obo/MI_1110 #predicted interaction
+subClassOf http://purl.obolibrary.org/obo/INO_0000002  #interaction
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms

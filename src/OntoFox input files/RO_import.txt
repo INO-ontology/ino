@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/RO_import.owl
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0002233 # has input
+http://purl.obolibrary.org/obo/RO_0002234 # has output
+http://purl.obolibrary.org/obo/RO_0000087 # has role
+http://purl.obolibrary.org/obo/BFO_0000054 #realized in
+
+http://purl.obolibrary.org/obo/RO_0002222 #temporally related to
+includeAllChildren 
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively

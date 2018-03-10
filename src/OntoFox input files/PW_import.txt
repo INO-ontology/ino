@@ -1,0 +1,22 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ino/PW_import.owl
+
+[Source ontology]
+PW
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PW_0000002 # classic metabolic pathway
+http://purl.obolibrary.org/obo/PW_0000003 # signaling pathway
+http://purl.obolibrary.org/obo/PW_0000004 # regulatory pathway
+http://purl.obolibrary.org/obo/PW_0000013 # disease pathway
+http://purl.obolibrary.org/obo/PW_0000754 # drug pathway
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PW_0000001 # pathway
+subClassOf http://purl.obolibrary.org/obo/INO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
