@@ -20,4 +20,4 @@ Note that the source ontology is an OWL file.
 
 INO can be cited as:
 
-Hur J, Özgür A, Xiang Z, He Y. <b>Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</b>. <i>Journal of Biomedical Semantics. 2015, 6:2</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-6-2">10.1186/2041-1480-6-2</a>
+Hur J, Özgür A, Xiang Z, He Y. <b>Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</b>. <i>Journal of Biomedical Semantics. 2015, 6:2</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-6-2">10.1186/2041-1480-6-2</a>. PMID: [25785184](https://www.ncbi.nlm.nih.gov/pubmed/25785184). PMCID: PMC4362819. 
