@@ -31,17 +31,17 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ino.owl">
         <dc:contributor>Yu Lin (YL)</dc:contributor>
-        <dc:date>2018-03-10</dc:date>
-        <dc:creator>Arzucan Ozgur</dc:creator>
+        <owl:versionInfo xml:lang="en">1.0.112</owl:versionInfo>
+        <dc:date>2018-05-05</dc:date>
         <dc:subject xml:lang="en">An ontology of interactions and interaction networks</dc:subject>
+        <dc:creator>Arzucan Ozgur</dc:creator>
         <dc:title xml:lang="en">INO: Interaction Network Ontology</dc:title>
         <dc:creator xml:lang="en">Junguk Hur</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
-        <dc:description xml:lang="en">The Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations. INO is a community-driven ontology, aligns with BFO, and is developed by following the OBO Foundry principles.</dc:description>
-        <owl:versionInfo xml:lang="en">1.0.111</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
+        <dc:description xml:lang="en">he Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations. INO is a community-driven ontology, aligns with BFO, and is developed by following the OBO Foundry principles.</dc:description>
     </owl:Ontology>
     
 
@@ -916,11 +916,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002086"/>
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002092"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000062"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -944,11 +944,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002222"/>
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002092"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002092"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -1079,12 +1079,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;BFO_0000055"/>
-            <rdf:Description rdf:about="&obo;RO_0000052"/>
+            <rdf:Description rdf:about="&obo;RO_0000057"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;RO_0000057"/>
+            <rdf:Description rdf:about="&obo;BFO_0000055"/>
+            <rdf:Description rdf:about="&obo;RO_0000052"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -1365,7 +1365,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;RO_0002131"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000050"/>
@@ -1373,7 +1373,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000051"/>
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+            <rdf:Description rdf:about="&obo;RO_0002131"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -1418,12 +1418,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000119 rdf:resource="&obo;ro/docs/causal-relations"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002230"/>
-            <rdf:Description rdf:about="&obo;RO_0002211"/>
+            <rdf:Description rdf:about="&obo;RO_0002578"/>
+            <rdf:Description rdf:about="&obo;RO_0002578"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002578"/>
-            <rdf:Description rdf:about="&obo;RO_0002578"/>
+            <rdf:Description rdf:about="&obo;RO_0002230"/>
+            <rdf:Description rdf:about="&obo;RO_0002211"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -1837,20 +1837,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0002579 rdf:resource="&obo;RO_0002213"/>
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002406"/>
-            <rdf:Description rdf:about="&obo;RO_0002406"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002409"/>
-            <rdf:Description rdf:about="&obo;RO_0002409"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;RO_0002407"/>
             <rdf:Description rdf:about="&obo;RO_0002406"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;RO_0002406"/>
             <rdf:Description rdf:about="&obo;RO_0002407"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;RO_0002409"/>
+            <rdf:Description rdf:about="&obo;RO_0002409"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;RO_0002406"/>
+            <rdf:Description rdf:about="&obo;RO_0002406"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -1886,11 +1886,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <rdf:Description rdf:about="&obo;RO_0002409"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002408"/>
+            <rdf:Description rdf:about="&obo;RO_0002409"/>
             <rdf:Description rdf:about="&obo;RO_0002408"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;RO_0002409"/>
+            <rdf:Description rdf:about="&obo;RO_0002408"/>
             <rdf:Description rdf:about="&obo;RO_0002408"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
@@ -2106,6 +2106,28 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000412 rdf:resource="&obo;ro.owl"/>
         <obo:IAO_0000119 rdf:resource="&obo;ro/docs/causal-relations"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000160 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;INO_0000160">
+        <rdfs:label xml:lang="en">has coefficient</rdfs:label>
+        <obo:IAO_0000115>An data property that represents the coefficient value in a chemical reaction equation. Specifically, the cofficent is the number in front of a formula in a chemical equation.</obo:IAO_0000115>
+        <obo:IAO_0000112>The coefficient tells us how many molecules of a given formula are present. For example, 2 H2O means we have 2 molecules of water.</obo:IAO_0000112>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+    </owl:DatatypeProperty>
     
 
 
@@ -4322,8 +4344,8 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="&obo;INO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
+                <owl:onProperty rdf:resource="&obo;INO_0000154"/>
+                <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4334,8 +4356,8 @@ Previous. An information content entity is a non-realizable information entity t
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;INO_0000154"/>
-                <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;INO_0000133"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An interaction that involves a host (host organism or host cell) and pathogen organism at a specific condition.</obo:IAO_0000115>
@@ -6919,49 +6941,6 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_10090">
-        <rdfs:label rdf:datatype="&xsd;string">Mus musculus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314146"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Mus muscaris</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">NCBITaxon:85055</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">house mouse</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mice C57BL/6xCBA/CaJ hybrid</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mouse</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1224 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_1224">
-        <rdfs:label rdf:datatype="&xsd;string">Proteobacteria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Alphaproteobacteraeota</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:11</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11321122</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11542017</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11837318</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:16280474</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:26654112</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">proteobacteria</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">purple bacteria</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">purple bacteria and relatives</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">purple non-sulfur bacteria</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">purple photosynthetic bacteria</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">purple photosynthetic bacteria and relatives</oboInOwl:hasExactSynonym>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_phylum"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1773 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_1773">
@@ -7072,22 +7051,6 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_235 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_235">
-        <rdfs:label rdf:datatype="&xsd;string">Brucella abortus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1224"/>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bacterium abortus</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Brucella melitensis biovar Abortus</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Brucella melitensis bv. Abortus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:11</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_2759">
@@ -7109,28 +7072,10 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314146 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_314146">
-        <rdfs:label rdf:datatype="&xsd;string">Euarchontoglires</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:11214319</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:12082125</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:12878460</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PMID:15522813</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superorder"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_562 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_562">
         <rdfs:label rdf:datatype="&xsd;string">Escherichia coli</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_1224"/>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2"/>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bacillus coli</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Bacterium coli</oboInOwl:hasRelatedSynonym>
@@ -7152,25 +7097,11 @@ From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5791 -->
-
-    <owl:Class rdf:about="&obo;NCBITaxon_5791">
-        <rdfs:label rdf:datatype="&xsd;string">Physarum polycephalum</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_9606">
         <rdfs:label rdf:datatype="&xsd;string">Homo sapiens</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_2759"/>
-        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_314146"/>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">man</oboInOwl:hasExactSynonym>
