@@ -13,6 +13,7 @@ Note that the source ontology is an OWL file.
 
 # Browsing
 
+* INO in OBO Foundry ontology library: [http://obofoundry.org/ontology/ino.html](http://obofoundry.org/ontology/ino.html)
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ino](http://www.ontobee.org/ontology/ino)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/INO](https://bioportal.bioontology.org/ontologies/INO)
 
