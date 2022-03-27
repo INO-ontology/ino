@@ -36,5 +36,6 @@ Hur J, Özgür A, He Y. <b>The Interaction Network Ontology-supported modeling a
 ## Tools using INO
 The following tools are using INO: 
 
-* SciMiner: Hur J, Schuyler AD, States DJ, Feldman EL. SciMiner: web-based literature mining tool for target identification and functional enrichment analysis. _Bioinformatics_ 2009, 25(6):838-40. PMID: 19188191. PMCID: PMC2654801.
-* Ignet: [https://www.ignet.org/](https://www.ignet.org/)
+* **Ignet**: [https://www.ignet.org/](https://www.ignet.org/)
+* * **SciMiner**: Hur J, Schuyler AD, States DJ, Feldman EL. SciMiner: web-based literature mining tool for target identification and functional enrichment analysis. _Bioinformatics_ 2009, 25(6):838-40. PMID: 19188191. PMCID: PMC2654801.
+
