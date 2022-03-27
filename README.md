@@ -1,5 +1,8 @@
 The Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations.
 
+INO is an OBO library ontology as seen: 
+[http://obofoundry.org/ontology/ino.html](http://obofoundry.org/ontology/ino.html)
+
 [This GitHub website](https://github.com/INO-ontology/ino) is the home page of INO. 
 
 # Download
