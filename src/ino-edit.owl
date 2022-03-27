@@ -1,0 +1,2727 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ino.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ino.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mi="http://purl.obolibrary.org/obo/mi#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ino.owl">
+        <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/BFO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/CHEBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/CL_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/GO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/IAO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/IDO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/MI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/NCBITaxon_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/OGG_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/PR_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/PW_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/RO_import.owl"/>
+        <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
+        <dc:contributor>Yu Lin (YL)</dc:contributor>
+        <dc:creator>Arzucan Ozgur</dc:creator>
+        <dc:creator xml:lang="en">Junguk Hur</dc:creator>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:creator xml:lang="en">Zuoshuang &quot;Allen&quot; Xiang</dc:creator>
+        <dc:date>2022-03-27</dc:date>
+        <dc:description xml:lang="en">he Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations. INO is a community-driven ontology, aligns with BFO, and is developed by following the OBO Foundry principles.</dc:description>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:subject xml:lang="en">An ontology of interactions and interaction networks</dc:subject>
+        <dc:title xml:lang="en">INO: Interaction Network Ontology</dc:title>
+        <owl:versionInfo xml:lang="en">1.1.13</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000006 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000006">
+        <obo:IAO_0000115>an annotation property that lists keyword(s) useful for literature tagging and retrieval of sentences containing the type (or kind) of entity (e.g., interaction) as shown by the ontology term label and definition. </obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has literature mining keywords</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000036 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000036">
+        <obo:IAO_0000118>literature mining example</obo:IAO_0000118>
+        <dc:creator>Yongqun He</dc:creator>
+        <dc:creator>an example of usage for literature mining</dc:creator>
+        <rdfs:label xml:lang="en">example of literature mining keyword usage</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000087 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000087">
+        <obo:IAO_0000115>an annotation property that specifies the dependency pattern of the literature keywords that match to the ontology interaction type.</obo:IAO_0000115>
+        <obo:IAO_0000117>Arzucan Ozgur, Junguk Hur, Yongqun He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has keyword dependency pattern</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000020 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000020">
+        <obo:IAO_0000115>an object property between an activation process and a material entity that acts as an activator during the process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has activator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000080">
+        <rdfs:label xml:lang="en">has_controller</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000082 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000082">
+        <rdfs:label xml:lang="en">controls</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000136">
+        <rdfs:label xml:lang="en">has_next_step</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000139 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000139">
+        <rdfs:label xml:lang="en">lacks part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000154 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000154">
+        <obo:IAO_0000112>A host-pathogen interaction that has a specific interaction type (e.g., activation).</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between an interaction process (domain) and another interaction process (range) where the interaction proces (domain) has a specific type of the other interaction process (range)</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has interaction type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000160 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/INO_0000160">
+        <obo:IAO_0000112>The coefficient tells us how many molecules of a given formula are present. For example, 2 H2O means we have 2 molecules of water.</obo:IAO_0000112>
+        <obo:IAO_0000115>An data property that represents the coefficient value in a chemical reaction equation. Specifically, the cofficent is the number in front of a formula in a chemical equation.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has coefficient</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0018377 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0018377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0211"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000528"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000629"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Interaction network is a process that includes a network of at least two interactions.</obo:IAO_0000115>
+        <obo:IAO_0000116>If the interaction is physical and molecular, the interaction network is molecular interactions usually found in cells.</obo:IAO_0000116>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Interaction_network</obo:IAO_0000119>
+        <rdfs:label>interaction network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>interact, interacted, interacting, interaction, interaction, interactor, interactors, interacts, participates; plays a role, contribute, contributed, contributes, contributing, engagement, engagements, engages, engaging, involve, involved, involves, involving, act, acted, acting, acts</obo:INO_0000006>
+        <rdfs:label>interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000001"/>
+        <obo:IAO_0000115>an interaction network that includes at least two interactions and has a start point(s) and an end point(s). </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label>pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000158"/>
+        <obo:IAO_0000115>an interaction network model that is represented by a probabilistic graphical model (a type of statistical model) that represents a set of random variables and their conditional dependencies via a directed acyclic graph (DAG).</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Bayesian_network</obo:IAO_0000119>
+        <rdfs:label>Bayesian network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+        <obo:IAO_0000115>an regulator role that is borne by a material entity that regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">regulator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000117"/>
+        <obo:IAO_0000115>a positive regulation that one interactor up-regulates another.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>up-regulate, up-regulations, up-regulated, up-regulating,  upregulate, upregulations, upregulated, upregulating</obo:INO_0000006>
+        <rdfs:label xml:lang="en">up-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000008">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000016"/>
+        <obo:IAO_0000115>an interactor that regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">interaction regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+        <obo:IAO_0000115>an interactor role that is borne by a material entity that acts as an input of an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>interaction input role</obo:IAO_0000118>
+        <rdfs:label>input interactor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+        <obo:IAO_0000115>an interactor role that is borne by a material entity that acts as an output of an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>interaction output role</obo:IAO_0000118>
+        <rdfs:label>output interactor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000134"/>
+        <obo:IAO_0000115>a positive regulator role that is borne by a material entity that activates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">activator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000158"/>
+        <obo:IAO_0000115>an interaction network model that is represented by at least two mutual information interactions.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mutual_information</obo:IAO_0000119>
+        <rdfs:label>mutual information network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000115>a node is an object that represents an interactor in a graph of an interaction or interaction network.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:comment>is node equal to interactor?? (YL)</rdfs:comment>
+        <rdfs:label>node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000115>an edge is an object that represents a graphic line that links two interactors in an interaction. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label>edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a role that is borne by a material entity to act as a participant in an interaction process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label>interactor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000016">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>an interactor is a material entity that participates in an interaction.</obo:IAO_0000115>
+        <dc:creator>YL. YH. ZX.</dc:creator>
+        <rdfs:label xml:lang="en">interactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000017">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000141"/>
+        <obo:IAO_0000115>a positive interaction regulator that activates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">activator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>a biological interaction that occurs in the organism level. </obo:IAO_0000115>
+        <obo:IAO_0000116>Examples: a bacterium interacts with a mouse, a cat interacts with a dog </obo:IAO_0000116>
+        <dc:creator xml:lang="en">YL.YH. ZX.</dc:creator>
+        <rdfs:label xml:lang="en">organism-organism interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>A two-way interaction is an interaction that includes two different directions among two interactors. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>two-way interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115>a pathway that exists in human body.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000007"/>
+        <obo:IAO_0000115>an up-regulation that one interactor up-regulates the secretion of another interactor.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>up-regulate, up-regulations, up-regulated, up-regulating,  upregulate, upregulations, upregulated, upregulating</obo:INO_0000006>
+        <rdfs:label xml:lang="en">up-regulation of secretion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction involving human molecules</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:comment>YH: This branch may be made obsolete since we now have human INO (HINO).</rdfs:comment>
+        <rdfs:label xml:lang="en">human molecular interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000117"/>
+        <obo:IAO_0000115>a positive regulation that one interactor activates another. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>activate, activated, activates, activating, activation, activator, activators, activity</obo:INO_0000006>
+        <rdfs:label>activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction that includes a gene and a cell as interactors.</obo:IAO_0000115>
+        <dc:creator xml:lang="en">YL.YH. ZX.</dc:creator>
+        <rdfs:label xml:lang="en">gene-cell interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000024"/>
+        <obo:IAO_0000115>an activation process where one protein is activated by a material entity</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>protein activation, protein activated, activates protein, activating protein, activated protein</obo:INO_0000006>
+        <rdfs:comment>YH: in literature mining, the protein can be any specific protein symbol or protein name.</rdfs:comment>
+        <rdfs:label xml:lang="en">protein activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>a biological interaction that involves two cells as interactors.</obo:IAO_0000115>
+        <dc:creator xml:lang="en">YL.YH. ZX.</dc:creator>
+        <rdfs:label xml:lang="en">cell-cell interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000026"/>
+        <obo:IAO_0000115>an activation process where one protein is activated by a gene mutant</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>protein activation by gene mutant</obo:IAO_0000118>
+        <obo:INO_0000006>protein activation by mutant, protein activated by mutant, mutant activates protein, activating protein by mutant, mutant activated protein</obo:INO_0000006>
+        <rdfs:comment>YH: in literature mining, the protein can be any specific protein symbol or protein name. In addition, the mutant can be a mutant of any gene and the name of the mutant can be any specific name given by the research who generated the mutant.</rdfs:comment>
+        <rdfs:label xml:lang="en">protein activation by mutant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000115>a biochemical binding where a substance binds to the same site an agonist would bind to without causing activation of the receptor</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Receptor_antagonist</obo:IAO_0000119>
+        <obo:INO_0000006>antagonise, antagonised, antagonises, antagonising, antagonist, antagonists, antagonize, antagonized, antagonizes, antagonizing</obo:INO_0000006>
+        <rdfs:label>antagonism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction that involves a gene and its environment (e.g., calcium in blood). </obo:IAO_0000115>
+        <dc:creator xml:lang="en">YL.YH. ZX.</dc:creator>
+        <rdfs:label xml:lang="en">gene-enviroment interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a regulation process that regulates the location of a protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>location // (protein) // dependent, location // (protein) // depends</obo:INO_0000006>
+        <obo:INO_0000036>&quot;Localization of SpoIIE was shown to be dependent on the essential cell division protein FtsZ&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10747015)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">regulation of protein location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000032">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000173"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000044"/>
+        <obo:IAO_0000115>a gene expression regulation process that involves the regulation of a gene transcription.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO, JH</obo:IAO_0000117>
+        <obo:IAO_0000118>regulation of gene transcription</obo:IAO_0000118>
+        <obo:INO_0000006>transcribed, transcribed by, regulates the transcription of, regulated the transcription of, regulates // transcription, regulated // transcription, under the control of // transcription, essential for // transcription,  trascription depends, transcription // dependent, control // transcription, controlling // transcription, requires // transcription</obo:INO_0000006>
+        <obo:INO_0000087>amod(transcription, controlling), amod(transcription, dependent), amod(expression, dependent), nsubj(dependent, transcription), nsubj(control, expression), nmod:for(regulator, transcription), nmod:of(activator, transcription), nsubjpass(recognized, promoter)</obo:INO_0000087>
+        <rdfs:label xml:lang="en">regulation of transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that attenuates the virulence of a pathogenic microbe. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>attenuate, attenuated, attenuates, attenuating</obo:INO_0000006>
+        <rdfs:label>attenuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000034">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000045"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000044"/>
+        <obo:IAO_0000115>a gene expression regulation process that involves the regulation of a protein translation process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:IAO_0000118>regulation of gene translation</obo:IAO_0000118>
+        <obo:IAO_0000118>regulation of protein translation</obo:IAO_0000118>
+        <obo:INO_0000006>translation depends, translation // dependent, regulates // translation, regulated // translation, regulates the translation of, regulated the translation of, regulation // production, regulated // production, regulate // production</obo:INO_0000006>
+        <obo:INO_0000036>&quot;Transcription of ydhD was dependent on SigE&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/11011148)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">regulation of translation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016310"/>
+        <obo:IAO_0000115>a phosphorylation process that adds a phosphate to a protein kinase (possibly affecting its activity) by virtue of its own enzymic activity. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>autophosphorylate, autophosphorylated, autophosphorylates, autophosphorylating, autophosphorylation</obo:INO_0000006>
+        <rdfs:label>autophosphorylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a regulation process that regulates the activation of a gene so that the gene is expressed at a particular time</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR, JH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.medilexicon.com/medicaldictionary.php?t=970</obo:IAO_0000119>
+        <obo:INO_0000006>essential for // activation, essential for // activation, activated // expression, activates // expression, control // activation, controlling // activation, requires // activation, requiredd // activation</obo:INO_0000006>
+        <obo:INO_0000036>&quot;sequestration of SpoIIE protein into the prespore plays an important role in the control of sigmaF activation and in coupling this activation to septation.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10476035)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">regulation of gene activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000038">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000044"/>
+        <obo:IAO_0000115>a regulation process that positively regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR</obo:IAO_0000117>
+        <obo:INO_0000006>positive regulation // expression, increase // expression, induced // dependent, induced // via, induced // by, induced // dependent // presence</obo:INO_0000006>
+        <obo:INO_0000036>&quot;YtxH and YvyD seemed to be induced after phosphate starvation in the wild type in a sigma(B)-dependent manner.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10913081)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">positive regulation of gene expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000039">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000044"/>
+        <obo:IAO_0000115>a regulation process that negatively regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR</obo:IAO_0000117>
+        <obo:INO_0000006>essential for // negative regulation, negatively regulated // expression, negatively regulates // expression, negative regulator // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;These results suggest that YfhP may act as a negative regulator for the transcription of yfhQ, yfhR, sspE and yfhP.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10463184)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">negative regulation of gene expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000130"/>
+        <obo:IAO_0000115>a human molecular reaction that is specifically a biochemical reaction</obo:IAO_0000115>
+        <obo:IAO_0000117>YH. ZX</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human biochemical reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000159"/>
+        <obo:IAO_0000116>place holder for physical entities</obo:IAO_0000116>
+        <rdfs:comment>Obsolete note: This class is replaced by CHEBI term: molecular entity</rdfs:comment>
+        <rdfs:label xml:lang="en">physical entity - obsolete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000042">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000173"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000032"/>
+        <obo:IAO_0000115>a negative regulation process that down-regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>negatively regulated // transcription, negatively regulates // transcription, negatively controls // transcription, negatively controled // transcription</obo:INO_0000006>
+        <obo:INO_0000087>dobj(preventing,transcription)</obo:INO_0000087>
+        <rdfs:label xml:lang="en">negative regulation of gene transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000043">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000045"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000034"/>
+        <obo:IAO_0000115>a negative regulation process that down-regulates protein translation level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>negatively regulated // translation, negatively regulates // translation, limits // production, limited // production</obo:INO_0000006>
+        <rdfs:label xml:lang="en">negative regulation of protein translation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000044">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000009"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a regulation process that regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO, JH</obo:IAO_0000117>
+        <obo:IAO_0000118>regulation of gene expression</obo:IAO_0000118>
+        <obo:INO_0000006>regulated // expression, regulates // expression, essential // expression, control // expression, controlled // expression, controlling // expression, controls // expression, expression under control, essential for // expression, responsible for production, essential for production, regulates the production of, regulated the production of, responsible // production, responsible // production, affect // production, affected // production, depend // expression, dependent // expression, level // (gene) // dependent, requires // expression, required // expression, regulated by // pathway // relying on, regulon // includes, member of // regulon</obo:INO_0000006>
+        <obo:INO_0000036>&quot;SigK and GerE were essential for ykvP expression&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/11011148)</obo:INO_0000036>
+        <obo:INO_0000087>amod(expression, dependent)</obo:INO_0000087>
+        <rdfs:label xml:lang="en">gene expression regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+        <obo:IAO_0000115>a gene expression process that results in protein production from a gene DNA sequence. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>gene translation</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Translation_%28biology%29</obo:IAO_0000119>
+        <obo:INO_0000006>translation, translated, translating, encoding, encodes, protein production</obo:INO_0000006>
+        <rdfs:label xml:lang="en">protein translation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000042"/>
+        <obo:IAO_0000115>a negative regulation of gene transcription process that specifiies the negative regulation being an inhibition.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>inhibited // transcription, inhibits // transcription, repressed // transcription, repress // transcription, prevented // transcription, prevents // transcription, prevent // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;GerE protein inhibits transcription in vitro of the sigK gene.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">inhibition of gene transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000047">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000069"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000016"/>
+        <obo:IAO_0000115>an interactor that starts or speeds up a chemical reaction while undergoing no permanent change itself.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">chemical reaction catalyst</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000060"/>
+        <obo:IAO_0000115>a coprecipitation that occurs through an immunoprecipitation process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>co-immunoprecipitation</obo:IAO_0000118>
+        <obo:INO_0000006>coimmunoprecipitate, coimmunoprecipitated, coimmunoprecipitates, coimmunoprecipitating, coimmunoprecipitation, coimmunopreticipate, coimmunopreticipated, coimmunopreticipates, coimmunopreticipating, co-immunoprecipitate, co-immunoprecipitated, co-immunoprecipitates, co-immunoprecipitating, co-immunoprecipitation, co-immunopreticipate, co-immunopreticipated, co-immunopreticipates, co-immunopreticipating</obo:INO_0000006>
+        <rdfs:label>coimmunoprecipitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000049">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000173"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000032"/>
+        <obo:IAO_0000115>a regulation of transcription process that inviolves a positive regulation.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>positively regulated // transcription, negatively regulates // transcription, stimulating // transcription, stimulates // transcription, stimulated // transcription, induction // transcription, induced // transcription, induces // transcription, inducing // transcription, driven // transcription, drives // transcription</obo:INO_0000006>
+        <obo:INO_0000087>dobj(stimulating,transcription)</obo:INO_0000087>
+        <rdfs:label xml:lang="en">positive regulation of gene transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0914"/>
+        <obo:IAO_0000115>an indirect association that one interactor competes with another interactor in a specfiic process. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>compete, competed, competes, competing</obo:INO_0000006>
+        <rdfs:label>competition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000049"/>
+        <obo:IAO_0000115>a positive regulation of gene transcription process that inviolves an activation of the gene transcription.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>activated // transcription, activates // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;Transcription of the cotB, cotC, and cotX genes by final sigma(K) RNA polymerase is activated by a small, DNA-binding protein called GerE.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10788508)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">activation of gene transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000051"/>
+        <obo:IAO_0000115>an activation of gene transcription that is achieved by a low level of a protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>low level // activated // transcription, low level // activates // transcription, low concentration // activated // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;A low level of GerE activated transcription of cotD by sigmaK.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">activation of gene transcription by low level protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000053">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000045"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000034"/>
+        <obo:IAO_0000115>a regulation of translation process that positively regulates protein translation level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>positively regulated // translation, positively regulates // translation, increases // production, increased // production, increasing // production, increasing // production</obo:INO_0000006>
+        <obo:INO_0000036>&quot;ComK ... thereby increasing the production of the FlgM.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/9696775)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">positive regulation of protein translation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000115>a direct interaction where an antigen interacts with an antibody physically.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Antigen-antibody_interaction</obo:IAO_0000119>
+        <rdfs:label>antigen-antibody interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a regulation process that regulates an activity of a protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:IAO_0000118>protein activity regulation</obo:IAO_0000118>
+        <obo:INO_0000006>regulated // activity, regulates // activity, essential // activity, controlled // activity, controls // activity, activity under control, essential for // activity</obo:INO_0000006>
+        <rdfs:comment>If you can detect your protein on a western blot, and it is migrating to the apparent molecular weight that you expect, you can say for definite that the protein is being expressed. This means that the primary structure (i.e. the amino acid chain) has been synthesised. Activity depends on, for example, correct folding of the enzyme, the presence of any required cofactors, proper targetting (e.g. if its a membrane protein) and that there are mutations crucial catalytic residues. Western blotting tells you nothing about these things. (Reference: http://www.protocol-online.org/biology-forums/posts/30248.html)</rdfs:comment>
+        <rdfs:label xml:lang="en">regulation of protein activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+        <obo:IAO_0000115>a gene expression that has decreased volume. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>decreased gene expression</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">downexpression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000086"/>
+        <obo:IAO_0000115>a regulation that one interactor controls the quality of another interactor to a specific range</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>control, controled, controling, controlled, controlling, controls</obo:INO_0000006>
+        <rdfs:label>controling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000115>a direct physical association that one interactor is converted from another interactor. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>conversion, convert, converted, converting, converts, derived, derives, derivation</obo:INO_0000006>
+        <rdfs:label>conversion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0914"/>
+        <obo:IAO_0000115>an indirect association that one interactor cooperates with another interactor in a specfiic process. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>cooperate, cooperated, cooperates, cooperating</obo:INO_0000006>
+        <rdfs:label>cooperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0403"/>
+        <obo:IAO_0000115>a colocalization that two interactors are precipitated together.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>co-precipitation</obo:IAO_0000118>
+        <obo:INO_0000006>coprecipitate, coprecipitated, coprecipitates, coprecipitating, coprecipitation, copreticipate, copreticipated, copreticipates, copreticipating, co-precipitate, co-precipitated, co-precipitates, co-precipitating, co-precipitation, co-preticipate, co-preticipated, co-preticipates, co-preticipating</obo:INO_0000006>
+        <rdfs:label>coprecipitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0914"/>
+        <obo:IAO_0000115>an indirect association that two interactors are correlated in a process without defined influence of each other. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>correlate, correlated, correlating</obo:INO_0000006>
+        <rdfs:label>correlation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000169"/>
+        <obo:IAO_0000116>Example: A and B costimulate C. The relations between A and C or between B and C are regulation. However, the relation between A and B is an association.</obo:IAO_0000116>
+        <obo:IAO_0000117>YH, ZX, AO</obo:IAO_0000117>
+        <obo:INO_0000006>costimulate, costimulated, costimulating</obo:INO_0000006>
+        <rdfs:label>costimulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction that involves a cell and its environment as interactors</obo:IAO_0000115>
+        <dc:creator xml:lang="en">YH</dc:creator>
+        <rdfs:label xml:lang="en">cell-environment interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000116"/>
+        <obo:IAO_0000115>an immuno-precipitation that one interactor is precipitated based on an cross- immunological precipitation process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>cross-immunoprecipitate, cross-immunoprecipitated, cross-immunoprecipitates, cross-immunoprecipitating, cross-immunoprecipitation, crossimmunoprecipitate, crossimmunoprecipitated, crossimmunoprecipitates, crossimmunoprecipitating, crossimmunoprecipitation</obo:INO_0000006>
+        <rdfs:label>cross-immunoprecipitation interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction that involves an organism and its environment as interactors</obo:IAO_0000115>
+        <dc:creator xml:lang="en">YH</dc:creator>
+        <rdfs:label xml:lang="en">organism-environment interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000054"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>an antigen-antibody interaction where an antibody interats with an antigen that differs from the immunogen used to generate antibody.</obo:IAO_0000119>
+        <rdfs:label>immunological cross-reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000055"/>
+        <obo:IAO_0000115>a regulation of protein activitiy process that involves a negative regulation</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:IAO_0000118>negative protein activity regulation</obo:IAO_0000118>
+        <obo:INO_0000006>negatively regulated // activity, negatively regulates // activity</obo:INO_0000006>
+        <rdfs:label xml:lang="en">negative regulation of protein activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a regulation in which one interactor has a negative effect on another interactor </obo:IAO_0000115>
+        <obo:IAO_0000116>YH: different types of negative regulations exist. These types are related to different qualities and phenotyes of regulated targets. </obo:IAO_0000116>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>down-regulate, down-regulations, down-regulated, down-regulating,  downregulate, downregulations, downregulated, downregulating</obo:INO_0000006>
+        <rdfs:label>negative regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000015"/>
+        <obo:IAO_0000115>an interactor role that is played by a material entity that starts or speeds up a chemical reaction while undergoing no permanent change itself.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">chemical reaction catalyst role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000067"/>
+        <obo:IAO_0000115>a negative regulation of protein activitiy process that involves an inhibition of a protein activity</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>inhibited // activity, inhibites // activity, inhibition // activity</obo:INO_0000006>
+        <obo:INO_0000036>&quot;... FlgM antisigma factor that inhibits sigmaD activity.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/9696775)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">inhibition of protein activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000079"/>
+        <obo:IAO_0000115>a regulation of transcription process that occurs through the binding to a promotor of a gene</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>binds // promoter, bound to // promoter, binding // promoter, recognize // promoter, recognized // promoter, expressed // promoter, dependent // promoter. depdenent // promoter of (or proceding, procedes), repress // promoter, activate // promoter, regulate // promoter, regulated // promoter, stimulate // promoter, stimulate // transcription // promoter, induced // promoter</obo:INO_0000006>
+        <obo:INO_0000036>&quot;We show that GerE binds to two sites that span the -35 region of the cotD promoter.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:comment>Transcription factors bind to either enhancer or promoter regions of DNA adjacent to the genes that they regulate. Depending on the transcription factor, the transcription of the adjacent gene is either up- or down-regulated. (Ref: https://en.wikipedia.org/wiki/Transcription_factor).</rdfs:comment>
+        <rdfs:label xml:lang="en">regulation of transcription by binding to promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000173"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a regulation of transcription by binding to promoter that is further classified as a positive regulation</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>induce // expression // promoter, induced // transcription // promoter, stimulate // promoter, stimulate // transcription // promoter, induced // promoter, activated // transcription // promoter, activated // promoter, dependent // promoter // drives // expression, dependent // promoter // responsible // transcription, expressed // controlled // promoter</obo:INO_0000006>
+        <obo:INO_0000036>&quot;We show that GerE binds to two sites that span the -35 region of the cotD promoter.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:comment>Transcription factors bind to either enhancer or promoter regions of DNA adjacent to the genes that they regulate. Depending on the transcription factor, the transcription of the adjacent gene is either up- or down-regulated. (Ref: https://en.wikipedia.org/wiki/Transcription_factor).</rdfs:comment>
+        <rdfs:label xml:lang="en">positive regulation of transcription by binding to promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that results in the decrease of one interactor volume. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>reduction</obo:IAO_0000118>
+        <obo:INO_0000006>decrease, decreased, decreases, decreasing, decreasing, reduce, reduced, reduces, reducing, diminish, diminished, diminishes, diminishing, declining, declines, declination,   limit, limited, limiting, limits</obo:INO_0000006>
+        <rdfs:label>decrease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000173"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a regulation of transcription by binding to promoter that is further classified as a positive regulation</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>negatively regulate // promoter, negatively regulated // promoter, repressed // promoter, represses // promoter,  repress // promoter, binds // transcriptional start site // repressor, bound // transcriptional start site // repressor</obo:INO_0000006>
+        <obo:INO_0000036>&quot;We show that GerE binds to two sites that span the -35 region of the cotD promoter.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:comment>Transcription factors bind to either enhancer or promoter regions of DNA adjacent to the genes that they regulate. Depending on the transcription factor, the transcription of the adjacent gene is either up- or down-regulated. (Ref: https://en.wikipedia.org/wiki/Transcription_factor).</rdfs:comment>
+        <rdfs:label xml:lang="en">negative regulation of transcription by binding to promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000038"/>
+        <obo:IAO_0000115>a positive regulation of gene expression process that activates a gene so that the gene is expressed at a particular time</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR, JH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.medilexicon.com/medicaldictionary.php?t=970</obo:IAO_0000119>
+        <obo:INO_0000006>activation // (gene), activated  // (gene), activates //  // (gene), activated // action</obo:INO_0000006>
+        <rdfs:label xml:lang="en">gene activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0414"/>
+        <obo:IAO_0000115>an enzymatic reaction that leads to the breakdown of a biochemical entity. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>degradation, degradations, degrade, degraded, degrades, degrading</obo:INO_0000006>
+        <rdfs:label>biochemical degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000032"/>
+        <obo:IAO_0000115>a regulation of transcription process where two or more regulators regulate a gene transcription</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>transcription // combined action, transcription // results from // combined action</obo:INO_0000006>
+        <obo:INO_0000036>&quot;In vitro transcription experiments suggest that the differential pattern of cot gene expression results from the combined action of GerE and another transcription factor, SpoIIID.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10788508)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">co-regulation of transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000051"/>
+        <obo:IAO_0000115>an activation of gene transcription that is achieved by a high level of a protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>high level // activated // transcription, high level // activate // transcription, high concentration // activated // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;A low concentration of GerE activated cotB transcription by final sigma(K) RNA polymerase, whereas a higher concentration was needed to activate transcription of cotX or cotC.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10075739)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">activation of gene transcription by high level protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000032"/>
+        <obo:IAO_0000115>a regulation of transcription process through binding to a promoter or regulating the promoter binding activity</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>recognize // promoter, recognized // promoter, expressed // promoter, dependent // promoter. depdenent // promoter of (or proceding, procedes), repress // promoter, activate // promoter, regulate // promoter, regulated // promoter, stimulate // promoter, stimulate // transcription // promoter, induced // promoter</obo:INO_0000006>
+        <obo:INO_0000036>&quot;The -10 and -35 sequences of the sigmaB- and sigmaF-dependent promoters of katX overlap, and the transcriptional start points used by EsigmaB and EsigmaF differ by only one nucleotide.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10503549)</obo:INO_0000036>
+        <rdfs:comment>Transcription factors bind to either enhancer or promoter regions of DNA adjacent to the genes that they regulate. Depending on the transcription factor, the transcription of the adjacent gene is either up- or down-regulated. (Ref: https://en.wikipedia.org/wiki/Transcription_factor).</rdfs:comment>
+        <rdfs:label xml:lang="en">promoter-based regulation of transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000051"/>
+        <obo:IAO_0000115>an activation of gene transcription that is achieved by a phosphorylated protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:INO_0000006>phosphorylated // activator // transcription, phosphorylated // activates // transcription, phosphorylated // activate // transcription, phosphorylated // activated // transcription</obo:INO_0000006>
+        <obo:INO_0000036>&quot;Spo0A, which when phosphorylated is an activator of sigE transcription.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/10383978)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">activation of gene transcription by phosphorylated protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000101"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular catalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that results in a destabilization. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>destabilization, destabilize, destabilized, destabilizes, destabilizing</obo:INO_0000006>
+        <rdfs:label>destabilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000039"/>
+        <obo:IAO_0000115>a negative regulation process that inhibits gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>inhibits // expression, inhibited // expression, suppressor // expression, suppress // expression, repress // expression, acts // repressor</obo:INO_0000006>
+        <obo:INO_0000036>&quot;CtsR protein acts as a global repressor of the clpC operon.&quot; (Reference: http://www.ncbi.nlm.nih.gov/pubmed/9852015)</obo:INO_0000036>
+        <rdfs:label xml:lang="en">gene expression inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a regulation that one interactor has a dominant effect on the quality of another interactor. This differs from the accessory regulation. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>determine, determined, determines, determining, cause, caused, causes, causing,  lead, leading, leads, led, govern, governed, governing, governs</obo:INO_0000006>
+        <rdfs:label>dominant regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006461"/>
+        <obo:IAO_0000115>a protein complex assembly that involves two proteins that form a dimer. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>dimerize, dimerized, dimerizes, dimerizing</obo:INO_0000006>
+        <rdfs:label>protein dimerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a regulation process that involves in two interactors co-regulate a third interactor. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>co-regulation, co-regulated, co-regulate, co-regulating</obo:INO_0000006>
+        <rdfs:label xml:lang="en">co-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:label xml:lang="en">molecular complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that results in a disruption.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>disrupt, disrupted, disrupting, disrupts</obo:INO_0000006>
+        <rdfs:label>disruption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>dissociate, dissociated, dissociating, dissociation</obo:INO_0000006>
+        <rdfs:label>dissociation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that one interactor down-regulates another.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>down-regulate, down-regulated, down-regulates, down-regulating, down-regulation, downregulate, downregulated, downregulates, downregulating, downregulation, downmodulation, depress, depressed, depresses, depressing, suppress, suppressed, suppresses, suppressing, suppression, suppressor,  repress, repressed, represses, repressing, repression, repressor, repressors</obo:INO_0000006>
+        <rdfs:label>down-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000038"/>
+        <obo:IAO_0000115>a positive regulation of gene expression process that up-regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR</obo:IAO_0000117>
+        <obo:INO_0000006>essential for // up-regulation, up-regulated // expression, up-regulates // expression</obo:INO_0000006>
+        <rdfs:label xml:lang="en">gene expression up-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000039"/>
+        <obo:IAO_0000115>a negative regulation process that down-regulates gene expression level</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>down-regulated // expression, down-regulates // expression</obo:INO_0000006>
+        <rdfs:label xml:lang="en">gene expression down-regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000122"/>
+        <obo:IAO_0000115>an induction that leads to the production of an entity</obo:IAO_0000115>
+        <obo:IAO_0000116>YH: For example,  &quot;IL-2 and IL-15 induced the production of IL-17 and IFN-γ in a dose dependent manner by PBMCs.” </obo:IAO_0000116>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:INO_0000006>induction of the production, induces the production, induced the production</obo:INO_0000006>
+        <rdfs:label xml:lang="en">induction of production</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that one interactor eliminates another.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>eliminate, eliminated, eliminates, eliminating, abolish, abolished, abolishes, abolishing, abrogation</obo:INO_0000006>
+        <rdfs:label>elimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000027"/>
+        <obo:IAO_0000115>a cell-cell interaction that the transfers genetic material between bacterial cells by direct cell-to-cell contact or by a bridge-like connection between two cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Bacterial_conjugation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">bacterial conjugation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000115>Interaction leading to the formation of hydrogen bond between two molecules</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/books/NBK22567/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hydrogen binding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a regulation process where one gene product regulates an assembly process which forms an assembly having another gene product.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AR, JH</obo:IAO_0000117>
+        <obo:INO_0000006>regulated // assembly</obo:INO_0000006>
+        <rdfs:label xml:lang="en">regulation of assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000023"/>
+        <obo:IAO_0000115>a human molecular interaction where one molecule controls another molecule.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular control interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>a biological interaction that uses the information from a gene to synthesize a functional gene product. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>express, expressed, expresses, expressing, expression, expressions</obo:INO_0000006>
+        <rdfs:label>gene expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a positive regulation that one interactor facilitates a phenomenon such as a phenotype. This is an accessory effect not a major one. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>facilitate, facilitates, facilitating, faciliteted, help, helps, helped</obo:INO_0000006>
+        <rdfs:label>accessory regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000055"/>
+        <obo:IAO_0000115>a regulation of protein activitiy process that involves a positive regulation</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, AO</obo:IAO_0000117>
+        <obo:IAO_0000118>negative protein activity regulation</obo:IAO_0000118>
+        <obo:INO_0000006>positively regulated // activity, positively regulates // activity, dependent // stimulation</obo:INO_0000006>
+        <rdfs:label xml:lang="en">positive regulation of protein activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000105">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000528"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000133"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/INO_0000154"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000528"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interaction that involves a host (host organism or host cell) and pathogen organism at a specific condition.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">host-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0208"/>
+        <obo:IAO_0000115>a genetic interaction that forms a hybrid gene formed from two previously separate genes. It can occur as the result of a translocation, interstitial deletion, or chromosomal inversion.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gene_fusion</obo:IAO_0000119>
+        <obo:INO_0000006>gene AND (fuse, fused, fuses, fusing)</obo:INO_0000006>
+        <rdfs:label>gene fusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000107">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000000"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An host-pathogen interaction where the host is a cell.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">host cell-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000122"/>
+        <obo:IAO_0000112>The Salmonella invasin SipB induces macrophage apoptosis by binding to caspase-1</obo:IAO_0000112>
+        <obo:IAO_0000115>an induction that is achieved by binding to a protein</obo:IAO_0000115>
+        <obo:INO_0000006>induction ... by binding to // induces .. through binding// induced ... by binding to // caused ... by binding to // causes ... through ... binding</obo:INO_0000006>
+        <obo:INO_0000087>YH, AO, JH</obo:INO_0000087>
+        <rdfs:label xml:lang="en">induction by binding to protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000109">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000107"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000235"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000107"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An host cell-pathogen interaction where the host cell is a macrophage.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">macrophage-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000130"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular degradation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000088"/>
+        <obo:IAO_0000115>a protein dimerization where two proteins are different. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>heterodimerize, heterodimerized, heterodimerizes, heterodimerizing</obo:INO_0000006>
+        <rdfs:label>protein heterodimerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000088"/>
+        <obo:IAO_0000115>a protein dimerization where two proteins are the same. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>homodimerize, homodimerized, homodimerizes, homodimerizing</obo:INO_0000006>
+        <rdfs:label>protein homodimerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000109"/>
+        <obo:IAO_0000112>The Salmonella invasin SipB induces macrophage apoptosis by binding to caspase-1. From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC26795/</obo:IAO_0000112>
+        <obo:IAO_0000115>A macrophage-pathogen interaction that involves a macrophage protein and a pathogen protein.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>macrophage-pathogen PPI</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">macrophage-pathogen protein-protein interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+        <obo:IAO_0000115>a gene expression that has increased volume. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>increased gene expression</obo:IAO_0000118>
+        <obo:IAO_0000118>overexpression</obo:IAO_0000118>
+        <obo:INO_0000006>hyper-expression, hyperactivate, hyperactivated, hyperactivates, hyperactivation, hyperexpression, overexpression</obo:INO_0000006>
+        <rdfs:label>overexpression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016310"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>hyperphosphorylate, hyperphosphorylated, hyperphosphorylates, hyperphosphorylation</obo:INO_0000006>
+        <rdfs:label>hyperphosphorylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000176"/>
+        <obo:IAO_0000115>a translocation that one interactor is precipitated based on an immunological precipitation process.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>immuno-precipitate, immuno-precipitated, immuno-precipitates, immuno-precipitating, immuno-precipitation, immunoprecipitate, immunoprecipitated, immunoprecipitates, immunoprecipitating, immunoprecipitation, immunopreticipate, immunopreticipated, immunopreticipates, immunopreticipating</obo:INO_0000006>
+        <rdfs:label>immuno-precipitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000116>YH: different types of positive regulations exist. These types are related to different qualities and phenotyes of regulated targets. </obo:IAO_0000116>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>positively regulate, positive regulations, positively regulated, positively regulating,  promote, promoted, promotes, promoting</obo:INO_0000006>
+        <rdfs:label>positive regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>A negative regulation that disables, damages, or impairs the functioning of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>impair, impaired, impairing, impairs, cripple, crippled, cripples, crippling, sever, severed, severs</obo:INO_0000006>
+        <rdfs:label>impairment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that one interactor inactivates another.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>inactivate, inactivated, inactivates, inactivating, inactivation</obo:INO_0000006>
+        <rdfs:label>inactivation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000117"/>
+        <obo:IAO_0000115>a positive regulation that leads to the increase of a quality of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>augmentation</obo:IAO_0000118>
+        <obo:IAO_0000118>elavation</obo:IAO_0000118>
+        <obo:IAO_0000118>enhancement</obo:IAO_0000118>
+        <obo:INO_0000006>increase, increased, increases, increasing, augment, augmented, augmenting, augments, elavating, elevate, elevated, elevates, elevating, raise, raised, raises, raising,  enhance, enhanced, enhances, enhancing, enhancement</obo:INO_0000006>
+        <rdfs:label>increase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000023"/>
+        <rdfs:label xml:lang="en">human molecular synthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000117"/>
+        <obo:IAO_0000115>a positive regulation that leads to the induction of a new interactor due to the presence of another interactor. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000118>leading</obo:IAO_0000118>
+        <obo:IAO_0000118>triggering</obo:IAO_0000118>
+        <obo:INO_0000006>induce, induced, induces, inducing, induction,  trigger, triggered, triggering, triggerring, triggers, initiate, initiated, initiates, initiating, stimulate, stimulation, stimulated, stimulating, dependent // inducible</obo:INO_0000006>
+        <rdfs:label>induction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000023"/>
+        <rdfs:label xml:lang="en">human molecular regulatory reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that one interactor inhibites another.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>inhibit, inhibited, inhibiting, inhibition, inhibitor, inhibitors, inhibits, block, blocked, blocking, blocks</obo:INO_0000006>
+        <rdfs:label>inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000125">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000009"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000016"/>
+        <obo:IAO_0000115>an interactor that is an input of an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>input interactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that one interactor interferes a process. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>interfere, interferes, interfered, interfering, perturb, perturbed, perturbing, perturbs, obstruction</obo:INO_0000006>
+        <rdfs:label>interference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000101"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular modulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000101"/>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human template reaction regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000129">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000133"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/INO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000133"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/INO_0000139"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An host-pathogen interaction where the host is a gene mutant</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">host gene mutant-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000023"/>
+        <obo:IAO_0000115>a human molecular interaction where one molecule converts to another molecule.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">human molecular conversion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000023"/>
+        <rdfs:label xml:lang="en">human molecular template reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:label xml:lang="en">small molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000133">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An organism bearing a host role.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">host</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000005"/>
+        <obo:IAO_0000115>an interactor role that is borne by a material entity that positively regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">positive regulator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>An data item that indicates the step number of a pathway.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">pathway step</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000005"/>
+        <obo:IAO_0000115>an interactor role that is borne by a material entity that negatively regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">negative regulator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000113"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008219"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The Salmonella invasin SipB induces macrophage apoptosis by binding to caspase-1. From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC26795/</obo:IAO_0000112>
+        <obo:IAO_0000115>A macrophage-pathogen protein-protein interaction that induces cell death.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">macrophage-pathogen PPI inducing cell death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000115>a biochemical reaction that one interactor neutrolizes another. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>neutralise, neutralised, neutralises, neutralising, neutralize, neutralized, neutralizes, neutralizing</obo:INO_0000006>
+        <rdfs:label>neutralization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000141">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000134"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000008"/>
+        <obo:IAO_0000115>an interaction regulator that positively regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">positive regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0414"/>
+        <obo:IAO_0000116>an enzymatic reaction where a molecule gains oxygen.</obo:IAO_0000116>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>oxidate, oxidated, oxidates, oxidating, oxidation, oxidise, oxidised, oxidises, oxidising, oxidize, oxidized, oxidizes, oxidizing</obo:INO_0000006>
+        <rdfs:label>oxidation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000143">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000528"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/INO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0000528"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/INO_0000139"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An host-pathogen interaction where the pathogen is a gene mutant</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">host-pathogen mutant interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000144">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000137"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000008"/>
+        <obo:IAO_0000115>an interaction regulator that negatively regulates an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">negative regulator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000137"/>
+        <obo:IAO_0000115>a negative regulator role that is borne by a material entity that deactivates,  inhibits, blocks, or disrupts the action of a biological agent (e.g., enzyme).</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">deactivator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000146">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000107"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000235"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000107"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An host cell-pathogen interaction where the host is a macrophage cell</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">macrophage-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000009"/>
+        <obo:IAO_0000115>an input interactor role that is borne by a material entity that motivates a process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Motivation#Herzberg&apos;s_two-factor_theory</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">motivator role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0914"/>
+        <obo:IAO_0000115>an indirect association that one interactor is preceded by another interactor. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>precede, preceded, precedes, preceding</obo:INO_0000006>
+        <rdfs:label>precedence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>prevent, prevented, preventing, prevents</obo:INO_0000006>
+        <rdfs:label>prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000009"/>
+        <obo:IAO_0000115>an input interactor role that is borne by a material entity (e.g. status, job security, salary and fringe benefits) that do not motivate if present, but, if absent, result in demotivation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Motivation#Herzberg&apos;s_two-factor_theory</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hygiene factor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000151">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000010"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000016"/>
+        <obo:IAO_0000115>an interactor that is an output of an interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>output interactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000152">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/INO_0000107"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IDO_0000629"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000107"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An host cell-pathogen interaction where the host is an epithelial cell</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>epithelial cell-pathogen interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000024"/>
+        <obo:IAO_0000115>an activation that repeats.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>reactivate, reactivated, reactivates, reactivating, reactivation</obo:INO_0000006>
+        <rdfs:label>reactivation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000157"/>
+        <obo:IAO_0000115>a positive regulation that leads the recruitment of one interactor from one location to another. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>recruit, recruite, recruited, recruites, recruiting, recruits</obo:INO_0000006>
+        <rdfs:label>recruitment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000152"/>
+        <obo:IAO_0000112>We show that caspase-2 functions as an initiator caspase during Staphylococcus aureus α-toxin- and Aeromonas aerolysin-mediated apoptosis in epithelial cells. 
+From: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365430/</obo:IAO_0000112>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>epithelial cell-pathogen PPI</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">epithelial cell-pathogen protein-protein interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0914"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/INO_0000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A regulation represents a regulatory interaction between two interactors. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX, AO, JH</obo:IAO_0000117>
+        <obo:INO_0000006>regulate, regulated, regulates, regulating, regulation, regulator, modulate, modulated, modulates, modulating, modulation, mediate, mediated, mediates, mediating, influence, influenced, influences, influencing, affect, affected, affecting, affects, impact, impacted, impacting, impacts, effect, effected, effecting, effects, require, required, requires, requiring, respond, responded, responding, responds, responsive, change, changed, changes, changing, alter, altered, altering, alters, modified, modifies, modify, modifying, depend, depended, depending, depends, direct, directed, directing, directs, drive, driven, drives, driving, cause, caused, causes, causing,  lead, leading, leads, led, target, targeted, targeting, targets, dependent, essential for</obo:INO_0000006>
+        <rdfs:label>regulation</rdfs:label>
+        <rdfs:seeAlso>GO: GO_0065007</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that models interaction network</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Interactome</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">interaction network model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000159">
+        <rdfs:label xml:lang="en">obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000117"/>
+        <obo:IAO_0000115>a postive interaction that one interactor increases the stability of another interactor. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>stabilization, stabilize, stabilized, stabilizes, stabilizing</obo:INO_0000006>
+        <rdfs:label>stabilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000089"/>
+        <obo:IAO_0000115>a regulation process that involves in two interactors that are synergized in affecting a phenomenon (e.g., phenotype).</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>synergise, synergised, synergises, synergising, synergize, synergized, synergizes, synergizing</obo:INO_0000006>
+        <rdfs:label>synergization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that leads to a process termination.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>terminate, terminated, terminates, terminating</obo:INO_0000006>
+        <rdfs:label>termination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000044"/>
+        <obo:IAO_0000115>a gene expression regulation that leads to an increased rate of gene expression triggered either by biological processes or by artificial means.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Transactivation</obo:IAO_0000119>
+        <obo:INO_0000006>trans-activate, trans-activated, trans-activates, trans-activating, trans-activation, trans-activator, trans-activators, transactivate, transactivated, transactivates, transactivating, transactivation, transactivator, transactivators</obo:INO_0000006>
+        <rdfs:label>transactivation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000102"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>an interaction process that creates a complementary RNA copy of a sequence of DNA.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Transcription_%28genetics%29</obo:IAO_0000119>
+        <obo:INO_0000006>transcribe, transcribed, transcribes, transcribing, transcription</obo:INO_0000006>
+        <rdfs:label>gene transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000027"/>
+        <obo:IAO_0000115>a cell-cell interaction that transfers viral, bacterial, or both bacterial and viral DNA from one cell to another using a bacteriophage vector. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>transduce, transduced, transducer, transducers, transduces, transducing, transduction</obo:INO_0000006>
+        <rdfs:label>genetic transduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process that changes the location of a material entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>translocation, transloated, translocating, translocates, migrated, migration, migrates migrating, mobilization, mobilize, mobilized, mobilizes, mobilizing, mobilisation, mobilise, mobilised, mobilises, mobilising</obo:INO_0000006>
+        <rdfs:label>translocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016310"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <obo:INO_0000006>tyrosine-phosphorylated</obo:INO_0000006>
+        <rdfs:label>tyrosine-phosphorylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000061"/>
+        <obo:IAO_0000116>a correlation association that two genes are co-expressed in a system. </obo:IAO_0000116>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>co-expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000068"/>
+        <obo:IAO_0000115>a negative regulation that results in the deregulation of one interactor on a process. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>deregulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>A one-way interaction is an interaction that shows one direction between interactors.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>one-way interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000176"/>
+        <obo:IAO_0000115>a translocation that one interactor exports from one location</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>export</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000176"/>
+        <obo:IAO_0000115>a translocation that one interactor imports from one location</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>import</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000176"/>
+        <obo:IAO_0000115>a translocation that one interactor secretes from the inside of another interactor</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:label>secretion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction between two proteins. </obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label>protein-protein interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000002"/>
+        <obo:IAO_0000115>an interaction that involves in a gene DNA and a protein</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+        <rdfs:label>gene-protein interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LifO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An organism is an individual entity that exhibits the properties of life, including reproduction, growth and development, maintenance, and response to stimuli. All organisms are composed of one or more cells.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <dc:creator>Oliver He</dc:creator>
+        <rdfs:comment>An organism may be either a prokaryote or a eukaryote. Prokaryotes are represented by two separate domains—bacteria and archaea. Eukaryotic organisms are characterized by the presence of a membrane-bound cell nucleus and contain additional membrane-bound compartments called organelles. Viruses are not typically considered to be organisms because they are incapable of autonomous reproduction, growth or metabolism.</rdfs:comment>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The various, enzyme controlled, series of reactions allowing for the conversion of materials, energy availability and biodegradation of xenobiotics.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was compiled based on a number of available defintions in various dictionaries.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathways where a signal - hormone, neurotransmitter, growth factor, peptide, any molecule - triggers one or multiple cascades of events. This involves a number of molecules, including receptors, proteins, ligands, messengers, any participating molecule. A signaling pathway may be upstream or downstream of other signaling pathways. Signaling pathways control a very broad spectrum of processes as well as pathways.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000003</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was compiled based on a number of definitions available in various dictionaries.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signaling pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathways that control the processes by which a cell or organism develops, adjusts, behaves, responds to conditions or changes in these conditions, or in any manner helps promote and maintain its efficient functioning.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000004</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was complied based on a number of definitions available in several dictionaries</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex human diseases encompass a spectrum of genetic and environmental attributes that together affect the normal functioning of several molecular and cellular pathways. Their combined and accumulated effect is manifested in the anomalous phenotype of the complex condition.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex human diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000754 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000754">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pharmacokinetics and the pharmacodynamics pathway elicited by the administration of specific drugs. The systems involved in drug processing and responses are also those handling exogenous, xenobiotic compounds in the cellular detoxification pathway. The distinction between a random encounter with a foreign compound and the processing of a substance administered for treatment along with the importance of genetic variation for the individual responses to particular drugs warrant their separate consideration.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VPetri</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-03-15T11:01:15Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000754</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug pathway</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
