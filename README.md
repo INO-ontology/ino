@@ -1,12 +1,18 @@
-The Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations.
+The Interaction Network Ontology (INO) is an ontology in the domain of interactions and interaction networks. INO represents general and species-neutral types of interactions and interaction networks, and their related elements and relations. INO has been used in different applications, such as the literature mining of various interaction types. 
 
 INO is an OBO library ontology as seen: 
-[http://obofoundry.org/ontology/ino.html](http://obofoundry.org/ontology/ino.html)
+[http://obofoundry.org/ontology/ino.html](http://obofoundry.org/ontology/ino.html).
 
 [This GitHub website](https://github.com/INO-ontology/ino) is the home page of INO. 
 
-# Download
+# Developers
+The INO development team includes: 
 
+* Dr. Oliver He, University of Michigan Medical School, Ann Arbor, MI, USA. 
+* Dr. Junguk Hur, University of North Dakota, Grand Forks, ND, USA. 
+* Dr. Arzucan Ozgur, Department of Computer Engineering, Bogazici University, Istanbul, Turkey.
+
+# Downloading
 Use the following URI to download this ontology
 
 * [http://purl.obolibrary.org/obo/ino.owl](http://purl.obolibrary.org/obo/ino.owl)
@@ -14,15 +20,14 @@ Use the following URI to download this ontology
 
 Note that the source ontology is an OWL file.  
 
-# Browsing
+# Browsing:
 
 * INO in OBO Foundry ontology library: [http://obofoundry.org/ontology/ino.html](http://obofoundry.org/ontology/ino.html)
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ino](http://www.ontobee.org/ontology/ino)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/INO](https://bioportal.bioontology.org/ontologies/INO)
 
-# Citation
-
-INO can be cited as:
+# Citations: 
+INO can be cited by the following references: 
 
 Hur J, Özgür A, Xiang Z, He Y. <b>Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</b>. <i>Journal of Biomedical Semantics. 2015, 6:2</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-6-2">10.1186/2041-1480-6-2</a>. PMID: [25785184](https://www.ncbi.nlm.nih.gov/pubmed/25785184). PMCID: [PMC4362819](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4362819/). 
 
