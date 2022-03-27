@@ -6,11 +6,11 @@ INO is an OBO library ontology as seen:
 [This GitHub website](https://github.com/INO-ontology/ino) is the home page of INO. 
 
 # Developers
-The INO development team includes: 
+The INO development team includes three laboratories led by: 
 
-* Dr. Oliver He, University of Michigan Medical School, Ann Arbor, MI, USA. 
-* Dr. Junguk Hur, University of North Dakota, Grand Forks, ND, USA. 
-* Dr. Arzucan Ozgur, Department of Computer Engineering, Bogazici University, Istanbul, Turkey.
+* Dr. [Oliver He](http://www.hegroup.org/aboutUs/Oliver.html), University of Michigan Medical School, Ann Arbor, MI, USA. 
+* Dr. [Junguk Hur](https://und.edu/directory/jung.hur), University of North Dakota, Grand Forks, ND, USA. 
+* Dr. [Arzucan Ozgur](https://www.cmpe.boun.edu.tr/~ozgur/), Department of Computer Engineering, Bogazici University, Istanbul, Turkey.
 
 # Downloading
 Use the following URI to download this ontology
