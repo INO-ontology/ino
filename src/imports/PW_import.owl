@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ino/imports/PW_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ino/imports/PW_import.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ino/imports/PW_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pathway is a set of inter-connected  reactions and interactions whose delineation and scope are used as a model for exploring and studying, describing and understanding the working of and relationships between biomolecules within a context.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000001</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PW_0000001"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was compiled based on a number of available defintions in various dictionaries.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The various, enzyme controlled, series of reactions allowing for the conversion of materials, energy availability and biodegradation of xenobiotics.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signaling pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PW_0000001"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000003</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was compiled based on a number of definitions available in various dictionaries.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathways where a signal - hormone, neurotransmitter, growth factor, peptide, any molecule - triggers one or multiple cascades of events. This involves a number of molecules, including receptors, proteins, ligands, messengers, any participating molecule. A signaling pathway may be upstream or downstream of other signaling pathways. Signaling pathways control a very broad spectrum of processes as well as pathways.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulatory pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PW_0000001"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000004</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition was complied based on a number of definitions available in several dictionaries</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pathways that control the processes by which a cell or organism develops, adjusts, behaves, responds to conditions or changes in these conditions, or in any manner helps promote and maintain its efficient functioning.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000013">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PW_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex human diseases encompass a spectrum of genetic and environmental attributes that together affect the normal functioning of several molecular and cellular pathways. Their combined and accumulated effect is manifested in the anomalous phenotype of the complex condition.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex human diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PW_0000754 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PW_0000754">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PW_0000001"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-03-15T11:01:15Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000754</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pharmacokinetics and the pharmacodynamics pathway elicited by the administration of specific drugs. The systems involved in drug processing and responses are also those handling exogenous, xenobiotic compounds in the cellular detoxification pathway. The distinction between a random encounter with a foreign compound and the processing of a substance administered for treatment along with the importance of genetic variation for the individual responses to particular drugs warrant their separate consideration.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VPetri</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pathway</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pw.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+

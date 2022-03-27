@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/ino/MI_import.owl
+http://purl.obolibrary.org/obo/ino/imports/MI_import.owl
 
 [Source ontology]
 MI

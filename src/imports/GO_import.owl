@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ino/imports/GO_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ino/imports/GO_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ino/imports/GO_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0407"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000022"/>
+        <obo:IAO_0000115>The addition of an acetyl group to a protein amino acid. An acetyl group is CH3CO-, derived from acetic [ethanoic] acid.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>protein amino acid acetylation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006473</oboInOwl:id>
+        <rdfs:label>protein acetylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006915">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0012501"/>
+        <obo:IAO_0000115>A programmed cell death process which begins when a cell receives an internal (e.g. DNA damage) or external signal (e.g. an extracellular death ligand), and proceeds through a series of biochemical events (signaling pathway phase) which trigger an execution phase. The execution phase is the last step of an apoptotic process, and is typically characterized by rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume (pyknosis), chromatin condensation, nuclear fragmentation (karyorrhexis), plasma membrane blebbing and fragmentation of the cell into apoptotic bodies. When the execution phase is completed, the cell has died.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>apoptotic cell death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>apoptotic programmed cell death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>programmed cell death by apoptosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of apoptosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>apoptosis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>apoptosis signaling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>apoptotic program</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>type I programmed cell death</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006915</oboInOwl:id>
+        <rdfs:label>apoptotic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any biological process that results in permanent cessation of all vital functions of a cell. A cell should be considered dead when any one of the following molecular or morphological criteria is met: (1) the cell has lost the integrity of its plasma membrane; (2) the cell, including its nucleus, has undergone complete fragmentation into discrete bodies (frequently referred to as apoptotic bodies). The cell corpse (or its fragments) may be engulfed by an adjacent cell in vivo, but engulfment of whole cells should not be considered a strict criteria to define cell death as, under some circumstances, live engulfed cells can be released from phagosomes (see PMID:18045538).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0008219</oboInOwl:id>
+        <rdfs:label>cell death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0012501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0012501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008219"/>
+        <obo:IAO_0000115>A process which begins when a cell receives an internal or external signal and activates a series of biochemical events (signaling pathway). The process ends with the death of the cell.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasNarrowSynonym>caspase-independent cell death</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>non-apoptotic programmed cell death</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>nonapoptotic programmed cell death</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0012501</oboInOwl:id>
+        <rdfs:label>programmed cell death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/INO_0000007"/>
+        <obo:IAO_0000115>The process of introducing a phosphate group into a molecule, usually with the formation of a phosphoric ester, a phosphoric anhydride or a phosphoric amide.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0016310</oboInOwl:id>
+        <rdfs:label>phosphorylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0018377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0018377">
+        <obo:IAO_0000115>The covalent attachment of a myristoyl group to a protein.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>protein amino acid myristoylation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0018377</oboInOwl:id>
+        <rdfs:label>protein myristoylation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>The process of creating protein oligomers, compounds composed of a small number, usually between three and ten, of component monomers; protein oligomers may be composed of different or identical monomers. Oligomers may be formed by the polymerization of a number of monomers or the depolymerization of a large protein polymer.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>protein oligomer assembly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein oligomer formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein oligomerization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0051259</oboInOwl:id>
+        <rdfs:label>protein complex oligomerization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/INO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/INO_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0407"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

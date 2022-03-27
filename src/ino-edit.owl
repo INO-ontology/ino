@@ -15,18 +15,18 @@
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ino.owl">
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/BFO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/CHEBI_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/CL_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/GO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/IAO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/IDO_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/MI_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/NCBITaxon_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/OGG_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/PR_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/PW_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/RO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/BFO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/CHEBI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/CL_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/GO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/IAO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/IDO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/MI_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/NCBITaxon_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/OGG_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/PR_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/PW_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ino/imports/RO_import.owl"/>
         <obo:IAO_0000116 xml:lang="en">Product version</obo:IAO_0000116>
         <dc:contributor>Yu Lin (YL)</dc:contributor>
         <dc:creator>Arzucan Ozgur</dc:creator>
